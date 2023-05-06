@@ -9,7 +9,12 @@ export function FeaturesShow({featuresShow}) {
         return featuresShow[0];
     }
     if(featuresShow.length > 1){
-        return featuresShow[0] ;
+        return (
+            <div>
+                <p className="features-text">{featuresShow[0]}</p>
+                <span className= "features-quantity"> +{featuresShow.length -1} </span>
+            </div>   
+        )
     }
     
 }

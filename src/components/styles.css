@@ -1,0 +1,130 @@
+body {
+    background-color: #F5F5F5;
+    padding-top: 50px;
+}
+
+.section-cards {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    width: 375px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.card {
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-shadow: 0px 4px 16px 0px #00000014;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #152242;
+}
+
+.logo-img {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    left: 270px;
+    top: -30px;
+
+}
+
+.product {
+    margin-top: -45px;
+    margin-bottom: 0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.features-text {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 150px;
+    border-radius: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background: #3AC500;
+    color: #ffffff;
+}
+
+.features-quantity {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0468FF;
+}
+
+.finans-prop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+
+}
+
+.conditions-text {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 5px
+}
+
+.conditions-span {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.button-detail {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 311px;
+    background-color: #0468FF;
+    color: #ffffff;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 5px;
+}

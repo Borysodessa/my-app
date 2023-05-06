@@ -1,6 +1,6 @@
 import { Card } from './Card'
 import { offers } from './offers';
-import { featuresShow } from './functionOffer';
+import './styles.css'
 
 export const App = () => {
     return (
@@ -8,7 +8,8 @@ export const App = () => {
            { offers.map((offer, i) => (
             <Card
                 bankId={offer.bankId}
-                type={offer.type}
+                   type={offer.type}
+                   product={offer.product}
                 typeRate={offer.rate}
                 rate={offer.rate}
                 maxAmount={offer.maxAmount}
