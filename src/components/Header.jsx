@@ -1,32 +1,14 @@
-import alfa from '../images/Alfa.svg';
-import other from '../images/Other.svg';
-import vtb from '../images/VTB.svg';
 import './styles.css'
+import { banks } from './banks'
+import { banksLogo } from './banks';
 
-export function Header({ header, product }) {
-    if (header === 'bank-alfa') {
-        return (
+
+export function Header({ bankId, product }) {
+   return (
             <div className='header'>
-                <h1 className="card-title" > Альфабанк</h1>
-                <img className="logo-img" src={alfa}></img>
+                <h1 className="card-title" > {banks[bankId]}</h1>
+                <img className="logo-img" src={banksLogo[bankId]}></img>
                 <p className="product"> {product === 'USED' ? 'б.у': 'Новостройка'} </p>
             </div>
         )
     }
-    if (header === 'bank-vtb-new') {
-        return (
-            <div className='header'>
-                <h1 className="card-title" > ВTБ</h1>
-                <img className="logo-img" src={vtb}></img>
-                <p className="product"> {product === 'USED' ? 'б.у': 'Новостройка'} </p>
-            </div>
-        )
-    }
-    return (
-        <div className='header'>
-            <h1 className="card-title" >{header}</h1>
-            <img className="logo-img" src={other}></img>
-            <p className="product"> {product === 'USED' ? 'б.у': 'Новостройка'} </p>
-        </div>
-    )
-}

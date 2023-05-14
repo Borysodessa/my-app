@@ -7366,7 +7366,7 @@ export const offers = [
         expireAt: '2023-04-05T05:55:31.099'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '765fb3d3-2bc8-4394-a73b-d900d54d582b',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7403,7 +7403,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '7e661c3f-b6ad-44ea-be72-1f8d1f00e27b',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7436,7 +7436,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'd13bd705-cdef-4cb9-9995-b2fb2581a8bd',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7469,7 +7469,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '661f1690-ad61-47e8-92ae-957a30bb20c6',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7498,7 +7498,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '4b1f4114-46a6-44ce-bfb3-2a5e7d6d9844',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7531,7 +7531,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'ce96c53c-a037-47aa-af61-cca30d295faa',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7560,7 +7560,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '10bf5473-2c2e-4afc-b23b-1d730009b109',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7589,7 +7589,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'ab222b50-1153-4a2f-b9fe-911a4626b3e6',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7614,7 +7614,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '1e979a40-9120-4376-a8c5-669e6568e703',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7651,7 +7651,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'e4704db9-d9a6-42e8-ba43-563ae8a75cf0',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7684,7 +7684,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '713e77a5-6c54-41f6-a894-22188d330142',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7717,7 +7717,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '2fbe32a6-f9ac-4fdb-8c43-507b24e637e6',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7746,7 +7746,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'ebee1ce5-e223-412f-b872-35f159ec21a4',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7779,7 +7779,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'f746b064-a3f4-4ade-8485-c7f63eef395e',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7808,7 +7808,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'd2ce7e78-3670-4a0f-8636-8f024331d454',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7837,7 +7837,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'e332918e-2757-4a08-9ade-353e2e099b4b',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7862,7 +7862,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '09e0a332-fb6a-4eb9-a414-90e528fab4cf',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7899,7 +7899,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'b9c51548-84e7-40ee-bffb-26a35dde93c7',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7932,7 +7932,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '0322b73a-8dc1-4021-a2d6-2d04bb1708e4',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7965,7 +7965,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'e8a6c1ed-ab95-4ff5-833d-f46e3c699f78',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -7994,7 +7994,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'ef756c05-9a70-4ec5-866b-bcaf10727def',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8027,7 +8027,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '53b2db51-a6de-4280-8881-47ce66ce5775',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8056,7 +8056,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '2e895ba5-46c3-4ef3-8276-ce1eefe0ce46',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8085,7 +8085,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '5360914b-36bd-4d49-b555-efe2135f5077',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8110,7 +8110,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '31e3c208-0dd4-42ec-86c7-4e0ae213d407',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8147,7 +8147,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '49aac9bf-eb9f-438d-a773-a244c7693256',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8180,7 +8180,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '0c8874b9-3aef-464b-a73e-a7528aef334d',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8213,7 +8213,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '5bb2df39-442f-4489-9c27-1dfb9ee9a934',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8242,7 +8242,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '0707a8e9-6b35-4850-9ba3-b462e88b1009',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8275,7 +8275,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '001b7d4d-ef70-4f70-a002-44b234b08835',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8304,7 +8304,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'e220c1c5-d1ad-4a8d-af43-4138f888eacf',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8333,7 +8333,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '154eca7b-dd8b-42a6-a34b-2fcc6ca2ea01',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8358,7 +8358,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '2ce496b2-4b6e-4c2b-a7da-dd99e0834006',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8395,7 +8395,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '186b41a5-3f74-436f-be93-f7b02cc13fd5',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8428,7 +8428,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '3a7439dc-fc4a-4627-982c-b27cfdfa5b84',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8461,7 +8461,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '85d26b07-3a90-4934-bec1-639530c32bb6',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8490,7 +8490,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'f9349d13-c381-4643-8d2d-eae37330e8f9',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8523,7 +8523,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '64e91c84-9a26-4622-aabc-58f42602ea0a',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8552,7 +8552,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'ed38c5d4-0823-4c27-bd7d-b630a7f30467',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8581,7 +8581,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '6302d1ba-8000-441e-9b93-5970f81db20e',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8606,7 +8606,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '685d3df4-4806-4a11-8ed8-471736ac9c28',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8643,7 +8643,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'fff7d0e8-6169-487a-bf0e-45f0ef34e0e2',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8676,7 +8676,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '3dd60b2b-a2ad-4c69-bf55-2e8f2a845f83',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8709,7 +8709,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'e1fc53b8-fc93-4be6-a465-916c0237faca',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8738,7 +8738,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'd7bc5acc-dbae-4904-8018-205efe37123d',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8771,7 +8771,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '425b3662-dec6-4312-8ecd-f2b9adeedbde',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8800,7 +8800,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '7e513acc-f58a-41dd-ba98-097b2277fe36',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8829,7 +8829,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '16a1ef75-adc7-420b-be95-e580e9e83ba4',
         type: 'MORTGAGE',
         product: 'NEW',
@@ -8854,7 +8854,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '68145ea7-371c-4337-9fd9-fd7c550ca72c',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -8891,7 +8891,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '4d7e740e-8409-442c-97c7-7c6470b5f2de',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -8924,7 +8924,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '0d75efd5-71e5-40f1-b807-4ad8c88e329e',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -8957,7 +8957,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: 'cbafe3f3-5780-421b-9306-049e8cd524a5',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -8986,7 +8986,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '4a161dfd-25e2-4cbb-983d-92849cb4a2fe',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -9019,7 +9019,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '780eade0-ff1e-43b5-aa9b-f2fa0d58ad9b',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -9048,7 +9048,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '5085a3bc-d44e-45ed-ba49-acee0b343dc7',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -9077,7 +9077,7 @@ export const offers = [
         expireAt: '2023-01-12T05:54:54.129'
       },
       {
-        bankId: 'bank-domrf',
+        bankId: 'bank-raif',
         offerId: '612f7d58-b5a2-401a-917d-d9cf7470a2c1',
         type: 'MORTGAGE',
         product: 'BUILD',
@@ -12069,7 +12069,7 @@ export const offers = [
             value: 0.003
           }
         ],
-        features: [],
+          //features: [],
         expireAt: '2023-01-12T05:54:54.316'
       },
       {

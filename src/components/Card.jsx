@@ -7,7 +7,7 @@ export const Card = ({ bankId, product, rate, maxAmount,
     minInitialPayment, features }) => {
 return(
 <div className="card">
-    <Header header={bankId} bankId={bankId} product={product}/>
+    <Header  bankId={bankId} product={product}/>
     <p className="features">
         <FeaturesShow featuresShow ={features}/> 
     </p>
