@@ -1,7 +1,7 @@
 import { App } from './App';
 import { FeaturesShow } from './functionOffer';
 import { Header } from './Header';
-
+import { offersElements } from './features'
 
 export const Card = ({ bankId, product, rate, maxAmount,
     minInitialPayment, features }) => {

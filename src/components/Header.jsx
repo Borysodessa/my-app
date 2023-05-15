@@ -2,7 +2,6 @@ import './styles.css'
 import { banks } from './banks'
 import { banksLogo } from './banks';
 
-
 export function Header({ bankId, product }) {
    return (
             <div className='header'>
