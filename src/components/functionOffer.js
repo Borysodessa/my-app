@@ -1,9 +1,8 @@
-import { featuresLogo } from './features';
+import { featuresParams } from './features';
 import { offers } from './offers';
 
 
 export function FeaturesShow({ featuresShow }) {
-//console.log('132156', featuresLogo[featuresShow[0]].text);
     if(featuresShow === undefined){
         return;
     }
@@ -11,11 +10,12 @@ export function FeaturesShow({ featuresShow }) {
         return;
     }
         return (
-            <div>
-                
-                { <img src={featuresLogo[featuresShow[0]].logo}></img> }
-                <p className="features-text">{featuresLogo[featuresShow[0]].text}</p>
-                <span className= "features-quantity"> + {featuresShow.length -1} </span>
+            <div className="wrap-features">
+            <div className="wrap-logo-text" style={{background: featuresParams[featuresShow[0]].backgroundСolor }}>
+                <img className="features-logo" src={featuresParams[featuresShow[0]].logo}></img> 
+                <p className="features-text" style={{ color: featuresParams[featuresShow[0]].color }}>{featuresParams[featuresShow[0]].text}</p>
+            </div>
+                <span className="features-quantity"> + {featuresShow.length - 1}</span>
             </div>   
         )
 }

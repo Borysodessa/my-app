@@ -2,11 +2,11 @@ import './styles.css'
 
 import best from '../imagesBagCard/best_rate.svg'
 import cian from '../imagesBagCard/onlyCian.svg'
-import family from '../imagesBagCard/Frame.svg'
+import family from '../imagesBagCard/children.svg'
 import matKapital from '../imagesBagCard/mum.svg'
-import supportNew from '../imagesBagCard/buy.svg'
+import supportNew from '../imagesBagCard/supportNew.svg'
 
-export const featuresLogo = {
+export const featuresParams = {
     DISCOUNT_FOR_CIAN: {
         logo: cian,
         text:'Ставка только на Циан.Ипотека',
@@ -21,7 +21,7 @@ export const featuresLogo = {
     }, 
     MATERNITY_CAPITAL:{
         logo: matKapital,
-        text:'Для семей с двумя детьми',
+        text:'Материнский капитал',
         color: '#0468FF',
         backgroundСolor: 'rgba(4, 104, 255, 0.1)'
     }, 
@@ -34,7 +34,7 @@ export const featuresLogo = {
     GOS_HELP_COVID:{
         logo: best,
         text:'Ваша лучшая ставка',
-        color: '#0468FF',
+        color: '#FFFFFF',
         backgroundСolor: '#3AC500'
     }, 
 }
