@@ -1,7 +1,6 @@
 import { featuresParams } from './features';
 import { offers } from './offers';
 
-
 export function FeaturesShow({ featuresShow }) {
     if(featuresShow === undefined){
         return;
