@@ -1,5 +1,4 @@
 import { featuresParams } from './features';
-import { offers } from './offers';
 
 export function FeaturesShow({ featuresShow }) {
     if(featuresShow === undefined){
@@ -8,13 +7,20 @@ export function FeaturesShow({ featuresShow }) {
     if (featuresShow.length === 0) {
         return;
     }
-        return (
-            <div className="wrap-features">
-            <div className="wrap-logo-text" style={{background: featuresParams[featuresShow[0]].backgroundСolor }}>
-                <img className="features-logo" src={featuresParams[featuresShow[0]].logo}></img> 
-                <p className="features-text" style={{ color: featuresParams[featuresShow[0]].color }}>{featuresParams[featuresShow[0]].text}</p>
+
+    const { logo, text, color, background } = featuresParams[featuresShow[0]];
+    return ( 
+        <div className="wrap-features">
+            <div className="features-text" style={{color, background }}>
+                    <img className="features-logo" src={logo}></img> 
+                    {text}
             </div>
-                <span className="features-quantity"> + {featuresShow.length - 1}</span>
-            </div>   
+            {featuresShow.length > 1 && (
+                <span className="features-quantity">
+                    + {featuresShow.length - 1}
+                </span>
+            )}
+        </div>   
         )
-}
+    }
+   

@@ -1,7 +1,9 @@
-import { App } from './App';
 import { FeaturesShow } from './functionOffer';
 import { Header } from './Header';
-import { offersElements } from './features'
+import {FormatRate} from './condition-text-format'
+import {FormatMaxAmount} from './condition-text-format'
+import {FormatMinInitialPayment} from './condition-text-format'
+import './styles.css'
 
 export const Card = ({ bankId, product, rate, maxAmount,
     minInitialPayment, features }) => {
@@ -11,13 +13,22 @@ return(
     <p className="features">
         <FeaturesShow featuresShow ={features}/> 
     </p>
-    <span className="cardMore"></span>
     <ul className="finans-prop">
-        <li><p className="conditions-text">Ставка</p><span className="conditions-span">{rate}</span></li>
-        <li><p className="conditions-text">Макс. кредит</p><span className="conditions-span">{maxAmount}</span></li>
-        <li><p className="conditions-text">Взнос от</p><span className="conditions-span">{minInitialPayment }</span></li>
+        <li>
+            <p className="conditions-text bid">Ставка</p>
+            <FormatRate formatRate = {rate}/>
+        </li>
+        <li>
+            <p className="conditions-text ">Макс. кредит</p>
+            <FormatMaxAmount formatMaxAmount = { maxAmount }/>
+        </li>
+        <li>
+            <p className="conditions-text">Взнос от</p>
+            <FormatMinInitialPayment formatMinInitialPayment = { minInitialPayment }/>
+        </li>
     </ul>
   <button className="button-detail">Подробнее</button>
 </div>
 );
 }
+

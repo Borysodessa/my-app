@@ -1,7 +1,5 @@
 export const offers = [
-
-    
-      {
+ {
         bankId: 'bank-alfa',
         offerId: '63b667416de52f63c2dff8a8',
         type: 'MORTGAGE',

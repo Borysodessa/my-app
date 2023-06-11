@@ -147,3 +147,10 @@ body {
     padding-left: 16px;
     border-radius: 5px;
 }
+
+.conditions-span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
