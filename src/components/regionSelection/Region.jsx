@@ -11,7 +11,7 @@ export function Region({ closeRegion, selectIdRegion,  }) {
     }
 
     function clearInput() {
-        setFilterText(()=>{return''})
+        setFilterText('');
     }
 
     const fillteredRegions = regions
