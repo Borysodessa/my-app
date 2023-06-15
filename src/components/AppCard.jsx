@@ -1,6 +1,6 @@
 import { Card } from './Card'
 import { offers } from './offers';
-import './styles.css'
+import './styles.css';
 
     const banks = {
     'bank-vtb-new': 'ВТБ',
