@@ -7,6 +7,7 @@ export function BankList({ title, bankName, logoName }) {
       <ul className="regionBankList">
         {regionBankName.map((el) => (
           <li
+            key={el}
             className="regionBankItem"
             style={
               el === "rosbankDom" || el === "open"

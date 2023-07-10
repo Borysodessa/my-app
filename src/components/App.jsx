@@ -7,14 +7,13 @@ import { RegionsFilter } from "../components/regionSelection/regionsFilter";
 import { BankList } from "./regionSelection/regionBank";
 import { regionBanksName } from "./regionSelection/regionBanksName";
 import { regionBanksLogo } from "./regionSelection/regionBanksName";
+import { GetTyps } from "./regionSelection/typs";
 
 export const App = () => {
-  //
   const [open, setOpen] = useState(false);
   const [select, setSelect] = useState(null);
   const [creditTerm, setcreditTerm] = useState(0);
   const [anInitialFee, setAnInitialFee] = useState(1);
-  //const [active, setActive] = useState(#ffffff)
 
   function idRegions(id) {
     setSelect(id);
@@ -73,6 +72,8 @@ export const App = () => {
           bankName={regionBanksName}
           logoName={regionBanksLogo}
         />
+        <GetTyps typsTitle={"Тип объекта"} />
+        <GetTyps typsTitle={"Тип жилья"} />
       </section>
     </section>
   );
