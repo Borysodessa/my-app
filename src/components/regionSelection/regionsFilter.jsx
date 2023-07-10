@@ -1,5 +1,4 @@
 import "./styles.css";
-//import { useState } from "react";
 import { years } from "./functions";
 
 export function RegionsFilter({
@@ -12,11 +11,11 @@ export function RegionsFilter({
   setValue,
 }) {
   function handleInput(event) {
-    setValue(event.target.value);
+    setValue(+event.target.value);
   }
 
   function handleClick(e) {
-    setValue(e.target.name);
+    setValue(+e.target.name);
   }
 
   return (
@@ -25,7 +24,7 @@ export function RegionsFilter({
       <input
         className="conditions__input"
         type="text"
-        value={value}
+        value={label === "кредит" ? (value = 1000000) : value}
         onInput={handleInput}
       />
 
@@ -33,29 +32,36 @@ export function RegionsFilter({
         {typeof unit === "string" ? unit : years(value, unit)}
       </span>
 
-      <input
-        className="range"
-        min={min}
-        max={max}
-        type="range"
-        value={value}
-        name="range"
-        onInput={handleInput}
-      />
+      {label === "кредит" ? (
+        <input /> === null
+      ) : (
+        <input
+          className="range"
+          min={min}
+          max={max}
+          type="range"
+          value={value}
+          name="range"
+          onInput={handleInput}
+        />
+      )}
 
       <ul className="condition__list">
-        {button.map((el, i) => (
-          <button
-            key={i}
-            className="conditions__bottom"
-            type="button"
-            name={el}
-            onClick={handleClick}
-          >
-            {el}
-            {typeof unit === "string" ? unit : years(el, unit)}
-          </button>
-        ))}
+        {label === "кредит"
+          ? button === null
+          : button.map((el, i) => (
+              <button
+                key={i}
+                className="conditions__bottom"
+                type="button"
+                name={el}
+                disabled={value === el ? true : false}
+                onClick={handleClick}
+              >
+                {el}
+                {typeof unit === "string" ? unit : years(el, unit)}
+              </button>
+            ))}
       </ul>
     </div>
   );

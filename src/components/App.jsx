@@ -4,12 +4,17 @@ import { Region } from "./regionSelection/Region.jsx";
 import regions from "./regionSelection/regions.js";
 import { MeinHeader } from "./regionSelection/region-main-header";
 import { RegionsFilter } from "../components/regionSelection/regionsFilter";
+import { BankList } from "./regionSelection/regionBank";
+import { regionBanksName } from "./regionSelection/regionBanksName";
+import { regionBanksLogo } from "./regionSelection/regionBanksName";
 
 export const App = () => {
+  //
   const [open, setOpen] = useState(false);
   const [select, setSelect] = useState(null);
   const [creditTerm, setcreditTerm] = useState(0);
   const [anInitialFee, setAnInitialFee] = useState(1);
+  //const [active, setActive] = useState(#ffffff)
 
   function idRegions(id) {
     setSelect(id);
@@ -26,7 +31,7 @@ export const App = () => {
 
   const regionName = regions.find((region) => region.id === select)?.name;
   return (
-    <section>
+    <section className="regionSection">
       <MeinHeader />
       <button onClick={handleClick}>
         {!select ? "Выберите регион" : regionName}
@@ -34,27 +39,41 @@ export const App = () => {
       {open && (
         <Region closeRegion={handleClickClose} selectIdRegion={idRegions} />
       )}
-
-      <h1 className="hypothecSettingTitle">Настройка ипотеки</h1>
-
-      <RegionsFilter
-        label={"Срок кредита"}
-        button={[3, 11, 15, 20]}
-        unit={["год", "года", "лет"]}
-        min={1}
-        max={30}
-        value={creditTerm}
-        setValue={setcreditTerm}
-      />
-      <RegionsFilter
-        label={"Первоначальный взнос"}
-        button={[10, 15, 30, 50, 80]}
-        unit={"%"}
-        min={10}
-        max={80}
-        value={anInitialFee}
-        setValue={setAnInitialFee}
-      />
+      <section className="mortgageSettings">
+        <h1 className="mortgageSettingstitle">Настройка ипотеки</h1>
+        <RegionsFilter
+          label={"кредит"}
+          button={[3, 11, 15, 20]}
+          unit={"₽"}
+          min={1}
+          max={30}
+          value={creditTerm}
+          setValue={setcreditTerm}
+        />
+        <RegionsFilter
+          label={"Срок кредита"}
+          button={[3, 11, 15, 20]}
+          unit={[" год", " года", " лет"]}
+          min={1}
+          max={30}
+          value={creditTerm}
+          setValue={setcreditTerm}
+        />
+        <RegionsFilter
+          label={"Первоначальный взнос"}
+          button={[10, 15, 30, 50, 80]}
+          unit={" %"}
+          min={10}
+          max={80}
+          value={anInitialFee}
+          setValue={setAnInitialFee}
+        />
+        <BankList
+          title={"Банк"}
+          bankName={regionBanksName}
+          logoName={regionBanksLogo}
+        />
+      </section>
     </section>
   );
 };
