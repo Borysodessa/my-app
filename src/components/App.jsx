@@ -1,44 +1,25 @@
 import "./styles.css";
 import { useState } from "react";
-import { Region } from "./regionSelection/Region.jsx";
-import regions from "./regionSelection/regions.js";
-import { MeinHeader } from "./regionSelection/region-main-header";
 import { RegionsFilter } from "../components/regionSelection/regionsFilter";
 import { BankList } from "./regionSelection/regionBank";
 import { regionBanksName } from "./regionSelection/regionBanksName";
 import { regionBanksLogo } from "./regionSelection/regionBanksName";
 import { GetTyps } from "./regionSelection/typs";
+import { Insurance } from "./regionSelection/insurance";
+import { AppCard } from "./AppCard";
+import { offers } from "./offers";
 
 export const App = () => {
-  const [open, setOpen] = useState(false);
-  const [select, setSelect] = useState(null);
   const [creditTerm, setcreditTerm] = useState(0);
   const [anInitialFee, setAnInitialFee] = useState(1);
+  const [selectBank, setSelectBank] = useState(["rosbankDom", "open"]); // <----
+  const [typeObj, setTypeObj] = useState("all");
+  const [typeHousing, setTypeHousing] = useState("house");
+  const [incuranced, setIncuranced] = useState(true);
 
-  function idRegions(id) {
-    setSelect(id);
-    setOpen(false);
-  }
-
-  function handleClick() {
-    setOpen(true);
-  }
-
-  function handleClickClose() {
-    setOpen(false);
-  }
-
-  const regionName = regions.find((region) => region.id === select)?.name;
   return (
-    <section className="regionSection">
-      <MeinHeader />
-      <button onClick={handleClick}>
-        {!select ? "Выберите регион" : regionName}
-      </button>
-      {open && (
-        <Region closeRegion={handleClickClose} selectIdRegion={idRegions} />
-      )}
-      <section className="mortgageSettings">
+    <section className="mortgageSettings">
+      <div className="container">
         <h1 className="mortgageSettingstitle">Настройка ипотеки</h1>
         <RegionsFilter
           label={"кредит"}
@@ -71,10 +52,25 @@ export const App = () => {
           title={"Банк"}
           bankName={regionBanksName}
           logoName={regionBanksLogo}
+          selectBank={selectBank}
+          setSelectBank={setSelectBank}
         />
-        <GetTyps typsTitle={"Тип объекта"} />
-        <GetTyps typsTitle={"Тип жилья"} />
-      </section>
+        <GetTyps
+          typsTitle={"Тип объекта"}
+          typsItems={["all", "resale", "newBuilding"]}
+          types={typeObj}
+          setTypes={setTypeObj}
+        />
+        <GetTyps
+          typsTitle={"Тип жилья"}
+          typsItems={["house", "room", "apartment"]}
+          types={typeHousing}
+          setTypes={setTypeHousing}
+        />
+        <Insurance incuranced={incuranced} setIncuranced={setIncuranced} />
+      </div>
+
+      <AppCard offers={offers} />
     </section>
   );
 };

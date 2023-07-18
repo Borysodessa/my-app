@@ -1,5 +1,19 @@
-export function BankList({ title, bankName, logoName }) {
+export function BankList({
+  title,
+  bankName,
+  logoName,
+  setSelectBank,
+  selectBank,
+}) {
   const regionBankName = Object.keys(bankName);
+
+  function onClick(id) {
+    setSelectBank(
+      selectBank.includes(id)
+        ? selectBank.filter((el) => el !== id)
+        : [...selectBank, id]
+    );
+  }
 
   return (
     <section className="regionBankSection">
@@ -7,13 +21,14 @@ export function BankList({ title, bankName, logoName }) {
       <ul className="regionBankList">
         {regionBankName.map((el) => (
           <li
-            key={el}
-            className="regionBankItem"
             style={
-              el === "rosbankDom" || el === "open"
+              selectBank.includes(el)
                 ? { backgroundColor: "#eeeeee", borderRadius: 16 }
                 : { backgroundColor: "#ffffff" }
             }
+            onClick={() => onClick(el)}
+            key={el}
+            className="regionBankItem"
           >
             <img className="regionBankImg" src={logoName[el]} alt="svg" />
             <p className="regionBankText">{bankName[el]}</p>

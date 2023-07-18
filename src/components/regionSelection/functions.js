@@ -16,8 +16,3 @@ export const years = function years(number, [one, few, many]) {
   }
   return many;
 };
-
-// for (let i = 1; i <= 30; i++) {
-//   console.log(i, years(i, ["год", "года", "лет"]));
-//   console.log(i, years(i, ["стул", "стула", "стульев"]));
-// }
