@@ -5,6 +5,7 @@ import gpb from "./images/Gazprom.svg";
 import open from "./images/Otkitie.svg";
 import PSB from "./images/PSB.svg";
 import raif from "../../images/Raif.svg";
+import alfa from "../../images/Alfa.svg";
 
 export const regionBanksName = {
   "bank-vtb-new": "ВТБ",
@@ -14,6 +15,7 @@ export const regionBanksName = {
   "bank-open": "Открытие",
   "bank-psb": "ПСБ",
   "bank-raif": "Райффайзенбанк",
+  "bank-alfa": "Альфабанк",
 };
 
 export const regionBanksLogo = {
@@ -24,4 +26,5 @@ export const regionBanksLogo = {
   "bank-open": open,
   "bank-psb": PSB,
   "bank-raif": raif,
+  "bank-alfa": alfa,
 };
