@@ -3,16 +3,16 @@ export const offers = [
     bankId: "bank-alfa",
     offerId: "63b667416de52f63c2dff8a8",
     type: "MORTGAGE",
-    product: "USED",
+    product: "USED", // ← вторичка или новостройка
     creditProgram: "MORT",
     rate: 0.1169,
-    minInitialPayment: 0.4,
+    minInitialPayment: 0.4, // ← первоначальный взнос 40%
     maxInitialPayment: 0.99,
     maxPayment: 266733,
     minAmount: 600000,
     maxAmount: 26545523,
     minTerm: 36,
-    maxTerm: 360,
+    maxTerm: 360, // ← максимальный срок кредита
     requirements: [
       {
         key: "CLIENT_TYPE",
@@ -20,11 +20,11 @@ export const offers = [
       },
       {
         key: "INSURANCE",
-        value: true,
+        value: true, // ← страховка
       },
       {
         key: "PROPERTY_TYPE",
-        value: "APARTMENTS",
+        value: "APARTMENTS", // ← тип жилья — апаратменты
       },
     ],
     features: [
@@ -3619,7 +3619,7 @@ export const offers = [
   },
   {
     bankId: "bank-delta",
-    offerId: "78",
+    offerId: "78b",
     type: "MORTGAGE",
     product: "USED",
     creditProgram: "Р“РѕС‚РѕРІС‹Рµ Р°РїР°СЂС‚Р°РјРµРЅС‚С‹",
@@ -3656,7 +3656,7 @@ export const offers = [
 
   {
     bankId: "bank-sovcombank",
-    offerId: "78",
+    offerId: "78a",
     type: "MORTGAGE",
     product: "USED",
     creditProgram: "Р“РѕС‚РѕРІС‹Рµ Р°РїР°СЂС‚Р°РјРµРЅС‚С‹",
@@ -3692,7 +3692,7 @@ export const offers = [
   },
   {
     bankId: "bank-psb",
-    offerId: "78",
+    offerId: "78c",
     type: "MORTGAGE",
     product: "USED",
     creditProgram: "Р“РѕС‚РѕРІС‹Рµ Р°РїР°СЂС‚Р°РјРµРЅС‚С‹",
@@ -3728,7 +3728,7 @@ export const offers = [
   },
   {
     bankId: "bank-rosbankDom",
-    offerId: "78",
+    offerId: "78d",
     type: "MORTGAGE",
     product: "USED",
     creditProgram: "Р“РѕС‚РѕРІС‹Рµ Р°РїР°СЂС‚Р°РјРµРЅС‚С‹",

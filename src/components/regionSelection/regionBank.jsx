@@ -14,7 +14,6 @@ export function BankList({
         : [...selectBank, id]
     );
   }
-
   return (
     <section className="regionBankSection">
       <h2 className="regionBankTitle">{title}</h2>

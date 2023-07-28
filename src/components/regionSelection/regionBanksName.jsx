@@ -1,11 +1,12 @@
 import vtb from "../../images/VTB.svg";
-import sovcombank from "./images/sovcom.svg";
+import sovcombank from "../../images/sovcom.svg";
 import rosbankDom from "./images/Rosbank-dom.svg";
 import gpb from "./images/Gazprom.svg";
-import open from "./images/Otkitie.svg";
-import PSB from "./images/PSB.svg";
+import open from "../../images/Otkitie.svg";
+import PSB from "../../images/PSB.svg";
 import raif from "../../images/Raif.svg";
 import alfa from "../../images/Alfa.svg";
+import delta from "../../images/Other.svg";
 
 export const regionBanksName = {
   "bank-vtb-new": "ВТБ",
@@ -16,6 +17,7 @@ export const regionBanksName = {
   "bank-psb": "ПСБ",
   "bank-raif": "Райффайзенбанк",
   "bank-alfa": "Альфабанк",
+  "bank-delta": "Дельта-Банк",
 };
 
 export const regionBanksLogo = {
@@ -27,4 +29,5 @@ export const regionBanksLogo = {
   "bank-psb": PSB,
   "bank-raif": raif,
   "bank-alfa": alfa,
+  "bank-delta": delta,
 };

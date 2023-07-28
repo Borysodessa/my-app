@@ -1,30 +1,20 @@
 export function GetTyps({ typsTitle, typsItems, types, setTypes }) {
-  const typeTitleObj = {
-    all: "всё",
-    resale: "Вторичка",
-    newBuilding: "Новостройка",
-    house: "Дом",
-    room: "Квартира",
-    apartment: "Апартаменты",
-  };
-
-  //const keystypeTitleObj = Object.keys(typeTitleObj);
-
   function onClick(item) {
-    //console.log(item);
     setTypes(item);
   }
-  console.log(types);
+
+  const typesKey = Object.keys(typsItems);
   return (
     <section>
-      <h2>{typsTitle}</h2>
+      <h2 className="typesTitle">{typsTitle}</h2>
       <form>
-        {typsItems.map((item, i) => (
+        {typesKey.map((item, i) => (
           <div key={i}>
             <label
               style={
                 types === item ? { color: "#0468FF" } : { color: "#000000" }
               }
+              className="inputLabel"
             >
               <input
                 type="radio"
@@ -32,9 +22,9 @@ export function GetTyps({ typsTitle, typsItems, types, setTypes }) {
                 name="item"
                 value="item"
                 onClick={() => onClick(item)}
-                checked={types === item ? true : false}
+                defaultChecked={types === item ? true : false}
               />
-              {typeTitleObj[item]}
+              {typsItems[item]}
             </label>
           </div>
         ))}

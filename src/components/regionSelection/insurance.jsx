@@ -1,7 +1,7 @@
 export function Insurance({ incuranced, setIncuranced }) {
   function onChange(event) {
     setIncuranced(!event.target.checked);
-    console.log(event.target.checked);
+    //console.log(event.target.checked);
   }
 
   return (

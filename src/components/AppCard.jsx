@@ -1,21 +1,13 @@
 import { Card } from "./Card";
 import "./styles.css";
 
-const banks = {
-  "bank-vtb-new": "ВТБ",
-  "bank-alfa": "Альфабанк",
-  "bank-delta": "Дельта-Банк",
-  "bank-raif": "Райффайзенбанк",
-  "bank-gpb": "Газпромбанк",
-  "bank-open": "Открытие",
-};
-
 export const AppCard = ({ offers }) => {
   return (
     <section className="section-cards">
       <p>всего: {offers.length} </p>
       {offers.map((offer, i) => (
         <Card
+          key={offer.offerId}
           bankId={offer.bankId}
           type={offer.type}
           product={offer.product}

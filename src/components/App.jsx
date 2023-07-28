@@ -12,10 +12,43 @@ import { offers } from "./offers";
 export const App = () => {
   const [creditTerm, setcreditTerm] = useState(0);
   const [anInitialFee, setAnInitialFee] = useState(1);
-  const [selectBank, setSelectBank] = useState(["rosbankDom", "open"]); // <----
-  const [typeObj, setTypeObj] = useState("all");
-  const [typeHousing, setTypeHousing] = useState("house");
+  const [selectBank, setSelectBank] = useState([
+    "bank-rosbankDom",
+    "bank-open",
+  ]);
+  const [typeObj, setTypeObj] = useState("ALL");
+  const [typeHousing, setTypeHousing] = useState("FLAT");
   const [incuranced, setIncuranced] = useState(true);
+
+  const filteredOffers = offers.filter((offer) =>
+    selectBank.includes(offer.bankId)
+  );
+
+  const filteredTypes = filteredOffers.filter((obj) => {
+    if (typeObj === "ALL") {
+      return true;
+    }
+    return obj.product === typeObj;
+  });
+
+  const filteredByPropertyType = [];
+  filteredTypes.forEach((filteredType) => {
+    return (
+      filteredType.requirements.filter((el) => el.key === "PROPERTY_TYPE") &&
+      filteredType.requirements.filter((el) => el.value === typeHousing)
+        .length !== 0 &&
+      filteredByPropertyType.push(filteredType)
+    );
+  });
+
+  const filteredByInsurance = [];
+  filteredByPropertyType.forEach((obj) => {
+    return (
+      obj.requirements.filter(
+        (el) => el.key === "INSURANCE" && el.value === incuranced
+      ).length !== 0 && filteredByInsurance.push(obj)
+    );
+  });
 
   return (
     <section className="mortgageSettings">
@@ -57,20 +90,28 @@ export const App = () => {
         />
         <GetTyps
           typsTitle={"Тип объекта"}
-          typsItems={["all", "resale", "newBuilding"]}
+          typsItems={{
+            ALL: "всё",
+            USED: "Вторичка",
+            NEW: "Новостройка",
+          }}
           types={typeObj}
           setTypes={setTypeObj}
         />
         <GetTyps
           typsTitle={"Тип жилья"}
-          typsItems={["house", "room", "apartment"]}
+          typsItems={{
+            COTTAGE: "Дом",
+            FLAT: "Квартира",
+            APARTMENTS: "Апартаменты",
+          }}
           types={typeHousing}
           setTypes={setTypeHousing}
         />
         <Insurance incuranced={incuranced} setIncuranced={setIncuranced} />
       </div>
 
-      <AppCard offers={offers} />
+      <AppCard offers={filteredByInsurance} selectBank={selectBank} />
     </section>
   );
 };
