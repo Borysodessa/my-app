@@ -9384,7 +9384,7 @@ export const offers = [
     minAmount: 100000,
     maxAmount: 6000000,
     minTerm: 12,
-    maxTerm: 360,
+    maxTerm: 180,
     requirements: [
       {
         key: "PROPERTY_TYPE",
@@ -9434,7 +9434,7 @@ export const offers = [
     minAmount: 100000,
     maxAmount: 29108823,
     minTerm: 12,
-    maxTerm: 360,
+    maxTerm: 180,
     requirements: [
       {
         key: "PROPERTY_TYPE",
@@ -9457,7 +9457,7 @@ export const offers = [
     minAmount: 100000,
     maxAmount: 30140675,
     minTerm: 12,
-    maxTerm: 360,
+    maxTerm: 180,
     requirements: [
       {
         key: "INSURANCE",
@@ -9507,7 +9507,7 @@ export const offers = [
     minAmount: 5000000,
     maxAmount: 33410815,
     minTerm: 12,
-    maxTerm: 360,
+    maxTerm: 180,
     requirements: [
       {
         key: "INSURANCE",
@@ -9538,7 +9538,7 @@ export const offers = [
     minAmount: 5000000,
     maxAmount: 31014772,
     minTerm: 12,
-    maxTerm: 360,
+    maxTerm: 180,
     requirements: [
       {
         key: "PROPERTY_TYPE",
@@ -9565,7 +9565,7 @@ export const offers = [
     minAmount: 5000000,
     maxAmount: 32173179,
     minTerm: 12,
-    maxTerm: 360,
+    maxTerm: 180,
     requirements: [
       {
         key: "INSURANCE",
@@ -9596,7 +9596,7 @@ export const offers = [
     minAmount: 5000000,
     maxAmount: 29929054,
     minTerm: 12,
-    maxTerm: 360,
+    maxTerm: 180,
     requirements: [
       {
         key: "PROPERTY_TYPE",

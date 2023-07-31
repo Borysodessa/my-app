@@ -1,17 +1,11 @@
-import { Card } from './Card';
-import {offers} from './offers'
-
-
-
 export function FormatRate({ formatRate }) {
-  return (formatRate * 100).toFixed(1) + '%';
+  return (formatRate * 100).toFixed(1) + "%";
 }
 
-export function FormatMaxAmount({formatMaxAmount}){
-    return (formatMaxAmount / 1000000).toFixed(1) + ' млн' + ' ₽'; 
+export function FormatMaxAmount({ formatMaxAmount }) {
+  return (formatMaxAmount / 1000000).toFixed(1) + " млн" + " ₽";
 }
 
-export function FormatMinInitialPayment({formatMinInitialPayment}) {
-    return (formatMinInitialPayment * 100).toFixed(1) + '%' ;
+export function FormatMinInitialPayment({ formatMinInitialPayment }) {
+  return (formatMinInitialPayment * 100).toFixed(1) + "%";
 }
-

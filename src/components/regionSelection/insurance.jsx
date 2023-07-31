@@ -1,12 +1,10 @@
 export function Insurance({ incuranced, setIncuranced }) {
   function onChange(event) {
-    setIncuranced(!event.target.checked);
-    //console.log(event.target.checked);
+    setIncuranced(event.target.checked);
   }
-
   return (
     <label>
-      <input onChange={onChange} type="checkbox" defaultChecked={incuranced} />
+      <input onChange={onChange} type="checkbox" checked={incuranced} />
       Со страховкой
     </label>
   );

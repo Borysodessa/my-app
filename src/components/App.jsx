@@ -10,7 +10,7 @@ import { AppCard } from "./AppCard";
 import { offers } from "./offers";
 
 export const App = () => {
-  const [creditTerm, setcreditTerm] = useState(0);
+  const [creditTerm, setcreditTerm] = useState(3);
   const [anInitialFee, setAnInitialFee] = useState(1);
   const [selectBank, setSelectBank] = useState([
     "bank-rosbankDom",
@@ -31,22 +31,17 @@ export const App = () => {
     return obj.product === typeObj;
   });
 
-  const filteredByPropertyType = [];
-  filteredTypes.forEach((filteredType) => {
+  const filteredByPropertyType = filteredTypes.filter((offer) => {
+    //console.log(offer.requirements.find((el) => el.key === "PROPERTY_TYPE"));
     return (
-      filteredType.requirements.filter((el) => el.key === "PROPERTY_TYPE") &&
-      filteredType.requirements.filter((el) => el.value === typeHousing)
-        .length !== 0 &&
-      filteredByPropertyType.push(filteredType)
+      offer.requirements.find((el) => el.key === "PROPERTY_TYPE").value ===
+      typeHousing
     );
   });
 
-  const filteredByInsurance = [];
-  filteredByPropertyType.forEach((obj) => {
-    return (
-      obj.requirements.filter(
-        (el) => el.key === "INSURANCE" && el.value === incuranced
-      ).length !== 0 && filteredByInsurance.push(obj)
+  const filteredByInsurance = filteredByPropertyType.filter((offer) => {
+    return offer.requirements.some(
+      (el) => el.key === "INSURANCE" && el.value === incuranced
     );
   });
 
@@ -67,7 +62,7 @@ export const App = () => {
           label={"Срок кредита"}
           button={[3, 11, 15, 20]}
           unit={[" год", " года", " лет"]}
-          min={1}
+          min={3}
           max={30}
           value={creditTerm}
           setValue={setcreditTerm}
